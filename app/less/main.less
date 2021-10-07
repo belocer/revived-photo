@@ -1,0 +1,48 @@
+@import 'smart-grid';
+@import 'fonts';
+@import 'var';
+@import 'anim';
+
+html {
+  .reset();
+  font-size: 10px;
+  font-family: 'OS Regular', sans-serif;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background: linear-gradient(90deg, #F88084, #019C91) center center no-repeat no-repeat;
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.container {
+  display: block;
+  .wrapper()
+}
+
+.flex-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.h100 {
+  height: 100%;
+  .md(height, auto);
+}
+
+.aic {
+  align-items: center;
+  .md(align-items, normal);
+}
+
+button[disabled="disabled"],
+button[disabled]
+{
+  background: var(--main-color) !important;
+}

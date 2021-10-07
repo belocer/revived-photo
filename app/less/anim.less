@@ -1,0 +1,88 @@
+@widthImg: 650px;
+@heightImg: 438px;
+
+.wrap {
+  height: 100vh;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.anim {
+  display: block;
+  position: relative;
+  background: #2a1e1e;
+  box-shadow: 0 0 50px #656565, inset 0 0 40px #656565, 10px 0 40px #F58185, -10px 0 40px #129A90;
+  margin: calc(50% - 300px) auto;
+  transition: all 1s;
+  width: @widthImg;
+  height: 438px;
+  z-index: 1;
+
+  .anim1-element {
+    max-width: @widthImg;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 2;
+    transition: all 1s;
+    transform-style: preserve-3d;
+    filter: blur(2px);
+    transform: perspective(1200px) translateZ(0px);
+    width: @widthImg;
+    height: @heightImg;
+  }
+
+  .anim2-element {
+    max-width: @widthImg;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 3;
+    transition: all 1s;
+    transform-style: preserve-3d;
+    //filter: grayscale(100%);
+    transform: perspective(1200px) translateZ(0px);
+    width: @widthImg;
+    height: @heightImg;
+  }
+
+  .anim3-element {
+    max-width: @widthImg;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 4;
+    transition: all 1s;
+    transform-style: preserve-3d;
+    //filter: grayscale(100%);
+    transform: perspective(1200px) translateZ(0px);
+    width: @widthImg;
+    height: @heightImg;
+  }
+
+  .anim4-element {
+    max-width: @widthImg;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 5;
+    transition: all 1s;
+    transform-style: preserve-3d;
+    //filter: grayscale(100%);
+    transform: perspective(1200px) translateZ(0px);
+    width: @widthImg;
+    height: @heightImg;
+  }
+}
