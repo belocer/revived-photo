@@ -58,6 +58,37 @@
   display: block;
   min-height: 650px;
   cursor: none;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 980px;
+    height: 30px;
+    background: #292929;
+    position: absolute;
+    bottom: 17px;
+    transform: rotate(1.6deg);
+    z-index: 0;
+    left: 66px;
+    right: 1px;
+    box-shadow: -4px 13px 9px #292929;
+  }
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 980px;
+    height: 30px;
+    background: #292929;
+    position: absolute;
+    bottom: 17px;
+    transform: rotate(-1.6deg);
+    z-index: 0;
+    left: 70px;
+    right: 1px;
+    box-shadow: -19px 13px 9px #292929;
+  }
 
   .anim-city {
     //box-shadow: 0 0 48px #4a4a4a;
@@ -70,36 +101,7 @@
     box-sizing: border-box;
     background-origin: border-box;
     background-repeat: no-repeat;
-
-    &::after {
-      content: '';
-      display: inline-block;
-      width: 980px;
-      height: 30px;
-      background: #292929;
-      position: absolute;
-      bottom: 17px;
-      transform: rotate(1.6deg);
-      z-index: 0;
-      left: 20px;
-      right: 1px;
-      box-shadow: -4px 13px 9px #292929;
-    }
-
-    &::before {
-      content: '';
-      display: inline-block;
-      width: 980px;
-      height: 30px;
-      background: #292929;
-      position: absolute;
-      bottom: 17px;
-      transform: rotate(-1.6deg);
-      z-index: 0;
-      left: 20px;
-      right: 1px;
-      box-shadow: -19px 13px 9px #292929;
-    }
+    overflow: hidden;
 
     .anim-city__back {
       width: 100%;
