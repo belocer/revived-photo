@@ -60,6 +60,7 @@
   cursor: none;
 
   .anim-city {
+    //box-shadow: 0 0 48px #4a4a4a;
     display: block;
     margin: calc(50% - 300px) auto 200px;
     width: 1000px;
@@ -67,9 +68,38 @@
     position: relative;
     z-index: 16;
     box-sizing: border-box;
-    overflow: hidden;
     background-origin: border-box;
     background-repeat: no-repeat;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 980px;
+      height: 30px;
+      background: #292929;
+      position: absolute;
+      bottom: 17px;
+      transform: rotate(1.6deg);
+      z-index: 0;
+      left: 20px;
+      right: 1px;
+      box-shadow: -4px 13px 9px #292929;
+    }
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 980px;
+      height: 30px;
+      background: #292929;
+      position: absolute;
+      bottom: 17px;
+      transform: rotate(-1.6deg);
+      z-index: 0;
+      left: 20px;
+      right: 1px;
+      box-shadow: -19px 13px 9px #292929;
+    }
 
     .anim-city__back {
       width: 100%;
@@ -94,33 +124,33 @@
     }
   }
 
-    .glass-search {
-      opacity: 0;
-      display: inline-block;
-      width: 100px;
-      height: 100px;
-      //overflow: hidden;
-      border-radius: 50%;
-      position: absolute;
-      pointer-events: none;
-      z-index: 16;
-      background: url(../img/dest/oae.jpg);
-      background-size: 1000px 665.41px;
-      background-origin: border-box;
+  .glass-search {
+    opacity: 0;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    //overflow: hidden;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    z-index: 16;
+    background: url(../img/dest/oae.jpg);
+    background-size: 1000px 665.41px;
+    background-origin: border-box;
 
-      &::after {
-        content: '';
-        display: inline-block;
-        width: 145px;
-        height: 145px;
-        max-width: 145px;
-        max-height: 145px;
-        background-image: url(../img/dest/glass.png);
-        background-size: 145px 145px;
-        margin-top: -5px;
-        margin-left: -5px;
-      }
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 145px;
+      height: 145px;
+      max-width: 145px;
+      max-height: 145px;
+      background-image: url(../img/dest/glass.png);
+      background-size: 145px 145px;
+      margin-top: -5px;
+      margin-left: -5px;
     }
+  }
 }
 
 .opacityShow {
