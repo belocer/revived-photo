@@ -1,0 +1,153 @@
+.cloud {
+  width: 100vw;
+  height: 100vh;
+
+  //background: rgb(30, 76, 101);
+  //background: linear-gradient(90deg, rgba(30, 76, 101, 1) 0%, rgba(137, 181, 203, 1) 53%, rgba(137, 181, 203, 1) 100%);
+
+  background: url(../img/dest/sky_sun.webp) center center no-repeat no-repeat;
+  background-size: cover;
+
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -89px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 500px;
+    background: url(../img/dest/mountain1.webp) center center no-repeat no-repeat;
+    background-size: contain;
+    z-index: 11;
+  }
+
+  .cloud__circle {
+    width: 100%;
+    height: 100%;
+    background: url(../img/dest/middle_opacity.webp) center center no-repeat no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 30;
+    transition: all 1s;
+    mix-blend-mode: screen;
+  }
+
+  .cloud__h1 {
+    font-family: 'MM Cruella 100', arial, sans-serif;
+    position: absolute;
+    top: 50%;
+    margin-top: -195px;
+    left: calc(50% - 391px);
+    z-index: 40;
+    font-size: 220px;
+    color: #fff;
+    text-shadow: 1px 1px #343434;
+  }
+
+  .cloud__h2 {
+    font-family: 'MM Cruella 100', arial, sans-serif;
+    position: absolute;
+    top: 60%;
+    left: calc(50% - 121px);
+    z-index: 40;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 1px 1px #343434;
+  }
+
+  .cloud__behindList {
+    position: absolute;
+    top: 1%;
+    right: 0;
+    z-index: 20;
+    display: flex;
+    justify-content: space-evenly;
+    animation: 350s linear 0s infinite normal cloud_right;
+    max-width: 4900px;
+
+    li {
+      background-size: contain;
+      width: 1260px;
+      height: 950px;
+    }
+  }
+
+  .cloud__behind1 {
+    background: url(../img/dest/cloud1.webp) center center no-repeat no-repeat;
+  }
+
+  .cloud__behind2 {
+    background: url(../img/dest/cloud2.webp) center center no-repeat no-repeat;
+  }
+
+  .cloud__behind3 {
+    background: url(../img/dest/cloud3.webp) center center no-repeat no-repeat;
+  }
+
+  .cloud__behind4 {
+    background: url(../img/dest/cloud4.webp) center center no-repeat no-repeat;
+  }
+
+  .cloud__frontList {
+    position: absolute;
+    top: calc(50% - 190px);
+    left: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 2000px;
+    animation: 120s linear 0s infinite normal cloud_left;
+
+    li {
+      background-size: contain;
+      width: 700px;
+      height: 400px;
+      margin-right: -200px;
+    }
+  }
+
+  .cloud__front1 {
+    background: url(../img/dest/cloud5.webp) center center no-repeat no-repeat;
+  }
+
+  .cloud__front2 {
+    background: url(../img/dest/cloud6.webp) center center no-repeat no-repeat;
+  }
+
+  .cloud__front3 {
+    background: url(../img/dest/cloud7.webp) center center no-repeat no-repeat;
+  }
+
+  .cloud__front4 {
+    background: url(../img/dest/cloud8.webp) center center no-repeat no-repeat;
+  }
+}
+
+@keyframes cloud_left {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-2000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes cloud_right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(4900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

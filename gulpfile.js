@@ -32,6 +32,7 @@ function scripts() {
     return src([
         'app/js/Card3D.js',
         'app/js/GrayScale.js',
+        'app/js/Cloud.js',
         'app/js/app.js',
     ])
         .pipe(sourcemaps.init())
