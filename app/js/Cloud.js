@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
     let cloud__circle = document.querySelector('.cloud__circle');
 
     function switchMode () {
-        let i = 1
+        let i = 1;
         mixBlendMode_variable_arr.forEach(item => {
             setTimeout( () => {
 
@@ -29,7 +29,7 @@ window.addEventListener('load', () => {
                 ], {duration: 1000});
 
                 cloud__circle.style.mixBlendMode = `${item}`
-            }, i * 5000)
+            }, i * 5000);
             i++;
         })
     }
@@ -37,6 +37,5 @@ window.addEventListener('load', () => {
 
     setInterval(() => {
         switchMode();
-    }, mixBlendMode_variable_arr.length * 5000)
-
-})
+    }, mixBlendMode_variable_arr.length * 5000);
+});

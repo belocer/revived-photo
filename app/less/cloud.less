@@ -5,25 +5,40 @@
   //background: rgb(30, 76, 101);
   //background: linear-gradient(90deg, rgba(30, 76, 101, 1) 0%, rgba(137, 181, 203, 1) 53%, rgba(137, 181, 203, 1) 100%);
 
-  background: url(../img/dest/sky_sun.webp) center center no-repeat no-repeat;
+  //background: url(../img/dest/sky_sun.webp) center center no-repeat no-repeat;
+  //background: url(../img/dest/2b.webp) center center no-repeat no-repeat;
+  //background: url(../img/dest/3b.webp) center center no-repeat no-repeat;
+  //background: url(../img/dest/4b.webp) center center no-repeat no-repeat;
+  //background: url(../img/dest/5b.webp) center center no-repeat no-repeat;
+  //background: url(../img/dest/6b.webp) center center no-repeat no-repeat;
+  //background: url(../img/dest/7b.webp) center center no-repeat no-repeat;
+  background: url(../img/dest/8b.webp) center center no-repeat no-repeat;
   background-size: cover;
 
   position: relative;
   z-index: 10;
   overflow: hidden;
+  .sm-block({
+    margin-bottom: 100px;
+  });
 
-  &::after {
-    content: '';
+  .mountain {
     display: block;
     position: absolute;
-    bottom: -89px;
+    transform: rotateX(20deg);
+    bottom: -179px;
     left: 0;
     right: 0;
     width: 100%;
     height: 500px;
     background: url(../img/dest/mountain1.webp) center center no-repeat no-repeat;
     background-size: contain;
-    z-index: 11;
+    z-index: 21;
+
+    .sm-block({
+      bottom: -188px;
+      transform: rotateX(30deg);
+    });
   }
 
   .cloud__circle {
