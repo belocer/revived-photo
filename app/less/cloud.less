@@ -5,14 +5,14 @@
   //background: rgb(30, 76, 101);
   //background: linear-gradient(90deg, rgba(30, 76, 101, 1) 0%, rgba(137, 181, 203, 1) 53%, rgba(137, 181, 203, 1) 100%);
 
-  //background: url(../img/dest/sky_sun.webp) center center no-repeat no-repeat;
+  background: url(../img/dest/sky_sun.webp) center center no-repeat no-repeat;
   //background: url(../img/dest/2b.webp) center center no-repeat no-repeat;
   //background: url(../img/dest/3b.webp) center center no-repeat no-repeat;
   //background: url(../img/dest/4b.webp) center center no-repeat no-repeat;
   //background: url(../img/dest/5b.webp) center center no-repeat no-repeat;
   //background: url(../img/dest/6b.webp) center center no-repeat no-repeat;
   //background: url(../img/dest/7b.webp) center center no-repeat no-repeat;
-  background: url(../img/dest/8b.webp) center center no-repeat no-repeat;
+  //background: url(../img/dest/8b.webp) center center no-repeat no-repeat;
   background-size: cover;
 
   position: relative;
@@ -77,18 +77,21 @@
 
   .cloud__behindList {
     position: absolute;
-    top: 1%;
+    top: -100%;
     right: 0;
     z-index: 20;
     display: flex;
     justify-content: space-evenly;
     animation: 350s linear 0s infinite normal cloud_right;
-    max-width: 4900px;
+    //max-width: 4900px;
+    max-width: 7500px;
 
     li {
       background-size: contain;
-      width: 1260px;
-      height: 950px;
+      /*width: 1260px;
+      height: 950px;*/
+      width: 3260px;
+      height: 2950px;
     }
   }
 
@@ -110,18 +113,19 @@
 
   .cloud__frontList {
     position: absolute;
-    top: calc(50% - 190px);
+    top: -27%;
     left: 0;
     z-index: 50;
     display: flex;
     justify-content: space-evenly;
-    max-width: 2000px;
+    ///max-width: 2000px;
+    max-width: 6500px;
     animation: 120s linear 0s infinite normal cloud_left;
 
     li {
       background-size: contain;
-      width: 700px;
-      height: 400px;
+      width: 1700px;
+      height: 1400px;
       margin-right: -200px;
     }
   }
